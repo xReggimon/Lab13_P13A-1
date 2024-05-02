@@ -1,11 +1,21 @@
 #include <iostream>
 #include <fstream>
+#include <map>
+#include <cctype>
+#include <iomanip>
 
 using namespace std;
 
 void pressEnterToContinue(void);
 
 int main() {
+	map<char, int> letterFrequency;
+
+	ifstream inputFile;
+	string filename;
+	cout << "Enter filename: ";
+	getline(cin, filename);
+	inputFile.open(filename);
 
 }
 
